@@ -3,7 +3,7 @@ import pandas as pd
 
 # 페이지 설정
 st.set_page_config(
-    page_title="헌법 중간고사",
+    page_title="헌법 기말고사",
     page_icon="❓",
     layout="centered"
 )
@@ -34,7 +34,7 @@ if not st.session_state.authenticated:
 st.title("📱 권헌법 OX")
 
 # 엑셀 불러오기
-df = pd.read_excel("midterm.xlsx", header=None)
+df = pd.read_excel("final_term.xlsx", header=None)
 
 num_col = 0
 question_col = 1
